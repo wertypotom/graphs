@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Files from './components/Files';
+import FileUpload from './components/FileUpload';
+import GraphPresentation from './components/Graph';
 
 function App() {
+  const onClickNode = function (nodeId: string) {
+    // window.alert(`Clicked node ${nodeId}`);
+  };
+
+  const onClickLink = function (source: string, target: string) {
+    window.alert(`Clicked link between ${source} and ${target}`);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Files />
+      <GraphPresentation />
+    </>
   );
 }
 
