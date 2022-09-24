@@ -10,7 +10,7 @@ export const graphConfig = {
   initialZoom: 0.4,
   node: {
     color: 'black',
-    size: 120,
+    size: 600,
     highlightStrokeColor: 'blue',
     fontSize: 16,
     highlightFontSize: 25,

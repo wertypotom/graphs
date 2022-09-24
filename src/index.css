@@ -8,7 +8,7 @@
 
 body {
   margin-top: 10px;
-  background-color: seashell;
+  /* background-color: seashell; */
 }
 
 .app {
@@ -64,7 +64,7 @@ body {
   margin: 15px 15px 0 15px;
   border: 1px dotted black;
   border-radius: 20px;
-  background-color: rgb(247 246 232);
+  background-color: rgb(248 246 246);
 }
 
 .file_text h1 {
