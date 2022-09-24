@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Graph } from 'react-d3-graph';
 import { graphConfig } from '../consts';
 import { useAppSelector } from '../store/store';

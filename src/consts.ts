@@ -1,7 +1,7 @@
 export const graphConfig = {
   automaticRearrangeAfterDropNode: true,
   directed: true,
-  height: 600,
+  height: 850,
   width: 1500,
 
   nodeHighlightBehavior: true,
@@ -15,16 +15,10 @@ export const graphConfig = {
     fontSize: 16,
     highlightFontSize: 25,
     highlightFontWeight: 'bold',
-    // labelProperty: (node: any) => {
-    //   return 'node.label';
-    // },
   },
   link: {
     highlightColor: 'black',
     fontSize: 14,
-    // labelProperty: (link: any) => {
-    //   return link.source + ' links ' + link.target;
-    // },
     renderLabel: true,
     highlightFontWeight: 'bold',
   },

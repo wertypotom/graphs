@@ -50,7 +50,7 @@ body {
 
 .graphData_container {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 60% 40%;
 }
 
 .graph {
@@ -75,6 +75,9 @@ body {
 
 .file_text p {
   height: 90%;
+  font-size: 15px;
+
+  text-align: left;
   overflow-y: scroll;
   padding: 10px;
 }
