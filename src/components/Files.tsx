@@ -20,7 +20,6 @@ const Files = () => {
       });
 
       const data = (await responce.json()) as IFile[];
-      console.log('data ', data);
 
       setFiles(data);
     } catch (error) {
