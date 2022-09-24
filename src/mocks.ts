@@ -4,7 +4,7 @@ export const filesMocks: IFile[] = [
   {
     id: 1,
     filename: 'Hello world',
-    code: 'Some code',
+    code: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate delectus fugit enim ex, ullam natus rem optio tempora, totam saepe dolore amet magni esse debitis laboriosam distinctio ipsa exercitationem, commodi omnis eum soluta excepturi. Cupiditate accusantium quidem eum vitae, hic perferendis eius iure nulla mollitia aliquam dolorum necessitatibus eos laborum ea cum debitis excepturi corrupti magnam esse incidunt voluptates illum? Architecto cum incidunt, recusandae expedita labore aspernatur nostrum reprehenderit ut officia earum animi temporibus esse quas deleniti dolorum deserunt repellendus ducimus veniam mollitia est laborum assumenda quaerat? Sapiente voluptatum nobis quos saepe nisi praesentium id impedit quia repellat quas rerum doloremque, nam autem eligendi. Totam perferendis unde quasi doloribus commodi, deleniti ipsum, ad, non necessitatibus cumque quam est corrupti. Consequuntur enim harum, aspernatur ab ut aut illo sunt soluta possimus explicabo nobis assumenda qui minus ipsa ipsum quam ratione dolor. Molestias corrupti cum eos, nesciunt quibusdam, perferendis amet optio porro, repudiandae nisi vel sit non architecto eligendi unde at. Voluptatem officia rerum provident iste repellat, maxime quis reiciendis impedit, incidunt at dicta repudiandae tenetur fuga rem inventore reprehenderit sit. Ducimus neque eum omnis cumque! Vitae praesentium dolore aspernatur eaque provident magnam qui exercitationem obcaecati saepe, quas nisi numquam laboriosam eveniet!',
     graph: {
       nodes: [
         {

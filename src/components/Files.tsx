@@ -23,9 +23,8 @@ const Files = () => {
 
   useEffect(() => {
     // loadDocumentData();
-    loadDocumentData();
 
-    // setFiles(filesMocks);
+    setFiles(filesMocks);
   }, []);
 
   const handleFileClick = (file: IFile) => {
