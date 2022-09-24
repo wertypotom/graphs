@@ -12,8 +12,15 @@ const Files = () => {
 
   const loadDocumentData = async () => {
     try {
-      const responce = await fetch('http://127.0.0.1:8000/parser');
+      const responce = await fetch('https://hacknu.herokuapp.com/parser/', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
       const data = (await responce.json()) as IFile[];
+      console.log('data ', data);
 
       setFiles(data);
     } catch (error) {
