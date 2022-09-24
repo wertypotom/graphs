@@ -10,6 +10,8 @@ interface Node {
   label?: string;
   fx?: number;
   fy?: number;
+
+  location?: string;
 }
 
 interface Links {

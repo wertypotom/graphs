@@ -557,21 +557,101 @@ export const filesMocks: IFile[] = [
     code: 'Some code',
     graph: {
       nodes: [
-        { id: 'Jerry' },
-        { id: 'Dunkan' },
-        { id: 'Garry' },
-        { id: 'Meru' },
-        { id: 'Arthur' },
+        {
+          id: 'MONTH_KEY',
+          color: 'blue',
+        },
+        {
+          id: 'LAST_SERIAL_NUM_MONTHLY',
+          color: 'blue',
+        },
+        {
+          id: 'NUM_OF_CALLS',
+          color: 'red',
+          location: 'file:/home/jovyan/data/first_dataset.csv.NUM_OF_CALLS',
+        },
+        {
+          id: 'FIRST_SERIAL_NUM_MONTHLY',
+          color: 'blue',
+        },
+        {
+          id: 'NUM_OF_CALLS_MONTHLY',
+          color: 'blue',
+        },
+        {
+          id: 'MAJOR_SERIAL_NUM_1M',
+          color: 'blue',
+        },
+        {
+          id: 'CALL_DURATION_MIN',
+          color: 'red',
+          location:
+            'file:/home/jovyan/data/first_dataset.csv.CALL_DURATION_MIN',
+        },
+        {
+          id: 'SERIAL_NUM_ON_SUBS_MONTHLY',
+          color: 'blue',
+        },
+        {
+          id: 'CALL_DURATION_MIN_MONTHLY',
+          color: 'blue',
+        },
+        {
+          id: 'COUNT_SERIAL_NUM',
+        },
+        {
+          id: 'ID',
+          color: 'green',
+          location: 'file:/home/jovyan/data/first_dataset.csv.ID',
+        },
+        {
+          id: 'TRAFFIC_LTE_MONTHLY',
+          color: 'blue',
+        },
+        {
+          id: 'SERIAL_NUM',
+          color: 'red',
+          location: 'file:/home/jovyan/data/first_dataset.csv.SERIAL_NUM',
+        },
+        {
+          id: 'TRAFFIC_LTE',
+          color: 'red',
+          location: 'file:/home/jovyan/data/first_dataset.csv.TRAFFIC_LTE',
+        },
       ],
       links: [
         {
-          source: 'Jerry',
-          target: 'Dunkan',
+          source: 'CALL_DURATION_MIN',
+          target: 'CALL_DURATION_MIN_MONTHLY',
         },
-        { source: 'Jerry', target: 'Garry' },
-        { source: 'Garry', target: 'Meru' },
-        { source: 'Garry', target: 'Arthur' },
-        { source: 'Arthur', target: 'Meru' },
+        {
+          source: 'NUM_OF_CALLS',
+          target: 'NUM_OF_CALLS_MONTHLY',
+        },
+        {
+          source: 'TRAFFIC_LTE',
+          target: 'TRAFFIC_LTE_MONTHLY',
+        },
+        {
+          source: 'SERIAL_NUM',
+          target: 'SERIAL_NUM_ON_SUBS_MONTHLY',
+        },
+        {
+          source: 'SERIAL_NUM',
+          target: 'FIRST_SERIAL_NUM_MONTHLY',
+        },
+        {
+          source: 'SERIAL_NUM',
+          target: 'LAST_SERIAL_NUM_MONTHLY',
+        },
+        {
+          source: 'SERIAL_NUM',
+          target: 'COUNT_SERIAL_NUM',
+        },
+        {
+          source: 'SERIAL_NUM',
+          target: 'MAJOR_SERIAL_NUM_1M',
+        },
       ],
     },
   },

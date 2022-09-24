@@ -3,6 +3,7 @@ export const graphConfig = {
   directed: true,
   height: 600,
   width: 1500,
+
   nodeHighlightBehavior: true,
   linkHighlightBehavior: true,
   highlightOpacity: 0.2,

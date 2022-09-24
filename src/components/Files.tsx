@@ -12,8 +12,10 @@ const Files = () => {
 
   const loadDocumentData = async () => {
     try {
-      const data = await fetch('hjhbjhbkjb');
-      //   setFiles(data);
+      const responce = await fetch('http://127.0.0.1:8000/parser');
+      const data = (await responce.json()) as IFile[];
+
+      setFiles(data);
     } catch (error) {
       alert((error as Error).message);
     }
@@ -21,8 +23,9 @@ const Files = () => {
 
   useEffect(() => {
     // loadDocumentData();
+    loadDocumentData();
 
-    setFiles(filesMocks);
+    // setFiles(filesMocks);
   }, []);
 
   const handleFileClick = (file: IFile) => {
@@ -32,7 +35,7 @@ const Files = () => {
   };
 
   return (
-    <div className='files'>
+    <div className='files' role='group'>
       {!!files.length &&
         files.map((file) => (
           <File

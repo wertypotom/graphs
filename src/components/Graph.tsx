@@ -58,17 +58,29 @@ const GraphPresentation = () => {
     setFileToRender(file);
   };
 
-  const onClickNode = () => {};
+  const onClickNode = (nodeId: string) => {
+    const node = fileToRender?.graph.nodes.find((node) => node.id === nodeId);
+
+    if (!!node?.location) alert(`${node.id} : ${node.location}`);
+  };
 
   return (
-    <div>
+    <div className='graphData_container'>
       {!!fileToRender && (
-        <Graph
-          id='graph-id' // id is mandatory
-          data={fileToRender?.graph}
-          config={graphConfig}
-          onClickNode={onClickNode}
-        />
+        <>
+          <div className='graph'>
+            <Graph
+              id='graph-id' // id is mandatory
+              data={fileToRender?.graph}
+              config={graphConfig}
+              onClickNode={onClickNode}
+            />
+          </div>
+          <div className='file_text'>
+            <h1>Source relation</h1>
+            <p>{fileToRender.code}</p>
+          </div>
+        </>
       )}
     </div>
   );
